@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import profile from "../assets/images/profile.png";
-import resume from '../assets/resume/resumeA2.pdf'
+import resume from '../../public/resumeA2.pdf';
 
 import {
   FaGithub,
@@ -214,6 +214,8 @@ export default function Hero() {
             <a
               href={resume}
               download
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 rounded-xl border border-blue-500 hover:bg-blue-500 transition flex items-center justify-center gap-3 text-white font-semibold"
             >
               Resume
@@ -258,16 +260,15 @@ export default function Hero() {
         {/* RIGHT */}
 
         <div className="relative">
-
-  {/* Rotating Ring */}
-  <motion.div
-    animate={{ rotate: 360 }}
-    transition={{
-      duration: 15,
-      repeat: Infinity,
-      ease: "linear",
-    }}
-    className="
+          {/* Rotating Ring */}
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{
+              duration: 15,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+            className="
       absolute
       inset-0
       rounded-full
@@ -277,15 +278,14 @@ export default function Hero() {
       via-blue-500
       to-purple-500
     "
-  />
+          />
 
-  {/* Static Image */}
-  <div className="relative p-[4px] rounded-full bg-slate-950">
-
-    <img
-      src={profile}
-      alt=""
-      className="
+          {/* Static Image */}
+          <div className="relative p-[4px] rounded-full bg-slate-950">
+            <img
+              src={profile}
+              alt=""
+              className="
       rounded-full
       object-cover
       w-[280px]
@@ -299,11 +299,9 @@ export default function Hero() {
       xl:w-[600px]
       xl:h-[600px]
       "
-    />
-
-  </div>
-
-</div>
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
