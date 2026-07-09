@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import task from "../assets/images/task.png";
 import post from "../assets/images/post.png";
 import ekart from "../assets/images/ekart.png";
+import myntra from "../assets/images/myntra.png";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
@@ -9,37 +10,46 @@ const projects = [
     title: "E-Kart",
     image: ekart,
     description:
-      "A full-stack e-commerce application with secure authentication, JWT, email verification, shopping cart, and responsive UI.",
-    tech: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    github: "https://github.com/yourusername/ekart",
-    live: "https://your-demo-link.com",
+      "A full-stack MERN e-commerce platform featuring secure JWT authentication, email verification, shopping cart management, RESTful API integration, and a responsive Tailwind CSS frontend",
+    tech: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "bcrypt",
+      "Tailwindcss",
+      "Docker",
+    ],
+    github: "https://github.com/Udbhav1105/E-kart.git",
+    live: "https://e-kart-3.onrender.com/",
   },
   {
     title: "Task Manager",
     image: task,
     description:
       "A MERN task management application with CRUD operations, priority management, due dates, and responsive dashboard.",
-    tech: ["React", "Express", "MongoDB", "Tailwind"],
-    github: "https://github.com/yourusername/taskmanager",
-    live: "https://your-demo-link.com",
+    tech: ["React", "Express", "MongoDB", "Node", "REST API", "Tailwind"],
+    github: "https://github.com/Udbhav1105/Tasktracker.git",
+    live: "https://tasktracker-1-ud1k.onrender.com/",
   },
   {
-    title: "AI Crop Recommendation",
+    title: "A Post Creation Website",
     image: post,
     description:
-      "Machine learning application using XGBoost to recommend crops based on soil nutrients and weather conditions.",
-    tech: ["Python", "XGBoost", "Machine Learning"],
-    github: "https://github.com/yourusername/crop",
-    live: "https://your-demo-link.com",
+      "MERN-based post creation website featuring CRUD operations, image upload functionality with Multer, REST APIs, JWT authentication, and a responsive interface built with Tailwind CSS.",
+    tech: ["Express", "EJS", "Multer", "MongoDB", "CRUD"],
+    github: "https://github.com/Udbhav1105/Post-Writing-Website.git",
+    live: "https://post-writing-website-2.onrender.com/",
   },
   {
     title: "Myntra Clone",
-    image: "/projects/myntra.png",
+    image: myntra,
     description:
       "A responsive frontend clone of Myntra built using HTML, CSS, and JavaScript with modern UI components.",
     tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/yourusername/myntra",
-    live: "https://your-demo-link.com",
+    github: "https://github.com/Udbhav1105/Myntra-Clone.git",
+    live: "https://myntra-clone-eo1e.onrender.com/",
   },
 ];
 
@@ -80,21 +90,57 @@ export default function Projects() {
               }}
               className="bg-slate-800 rounded-3xl overflow-hidden shadow-lg border border-slate-700 hover:-translate-y-2 transition duration-300"
             >
-              <div className="bg-slate-950 p-0">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-auto object-contain rounded-xl"
-                />
+              <div className="bg-slate-950 rounded-t-3xl overflow-hidden">
+                <div className="relative h-80 overflow-hidden rounded-t-3xl">
+                  {/* Blurred Background */}
+                  <img
+                    src={project.image}
+                    alt=""
+                    className="
+      absolute
+      
+      w-full
+      h-full
+      object-cover
+      blur-xs
+      scale-110
+      opacity-50
+    "
+                  />
+
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0 bg-slate-950/40"></div>
+
+                  {/* Main Image */}
+                  <div className="relative h-full flex items-center justify-center p-4">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="
+        max-h-full
+        max-w-full
+        object-contain
+        rounded-lg
+        shadow-2xl
+        transition-transform
+        duration-500
+        hover:scale-105
+      "
+                    />
+                  </div>
+                </div>
               </div>
 
               <div className="p-8">
-                <h3 className="text-3xl font-bold mb-4">{project.title}</h3>
+                <div className="h-36 flex flex-col">
+                  <h3 className="text-3xl font-bold mb-4">{project.title}</h3>
 
                 <p className="text-gray-400 leading-7">{project.description}</p>
+                </div>
 
                 {/* Tech Stack */}
-                <div className="flex flex-wrap gap-3 mt-6">
+                <div className="mt-8 h-15">
+                  <div className="flex flex-wrap gap-3 mt-6">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
@@ -103,6 +149,7 @@ export default function Projects() {
                       {tech}
                     </span>
                   ))}
+                </div>
                 </div>
 
                 {/* Buttons */}

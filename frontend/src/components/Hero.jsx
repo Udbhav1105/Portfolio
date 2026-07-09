@@ -240,7 +240,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/udbhav-mishra-7a567a286/"
               target="_blank"
               rel="noreferrer"
               className="w-14 h-14 rounded-full bg-slate-900 border border-slate-700 hover:border-blue-400 hover:text-blue-400 flex items-center justify-center transition-all duration-300 hover:-translate-y-1"
@@ -249,7 +249,7 @@ export default function Hero() {
             </a>
 
             <a
-              href="mailto:your@email.com"
+              href="mailto:udbhavmsr@gmail.com"
               className="w-14 h-14 rounded-full bg-slate-900 border border-slate-700 hover:border-red-400 hover:text-red-400 flex items-center justify-center transition-all duration-300 hover:-translate-y-1"
             >
               <FaEnvelope color="white" size={26} />

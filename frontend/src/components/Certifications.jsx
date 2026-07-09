@@ -1,15 +1,17 @@
 import { motion } from "framer-motion";
 import { FaAward, FaExternalLinkAlt } from "react-icons/fa";
 import data from "../assets/certificates/deloitte-data-analytics.png"
+import amazon from "../assets/certificates/amazon.png"
+import cyber from '../assets/certificates/delloite.png'
 
 const certificates = [
   {
     title: "AWS Academy Cloud Foundations",
     issuer: "Amazon Web Services",
-    image: "/certificates/aws.png",
+    image: amazon,
     description:
       "Learned cloud fundamentals including EC2, IAM, S3, VPC, security, and cloud deployment concepts.",
-    link: "#",
+    link: "https://drive.google.com/file/d/1lZz6Y68XRRjhE0wMpCuhOqPuk1GEsRNi/view?usp=sharing",
   },
   {
     title: "Deloitte Data Analytics Job Simulation",
@@ -17,8 +19,16 @@ const certificates = [
     image: data,
     description:
       "Completed practical data analytics tasks using Excel, Tableau, dashboards, and business insights.",
-    link: "#",
+    link: "https://drive.google.com/file/d/17UW6LHWRZ9MBa0Jw5PiNNqmTWk_IwDkr/view?usp=sharing",
   },
+  {
+  title: "Deloitte Cyber Job Simulation",
+  issuer: "Forage",
+  image: cyber,
+  description:
+    "Completed practical cybersecurity tasks, gaining hands-on experience in cyber security concepts, threat analysis, and industry-based simulations.",
+  link: "https://drive.google.com/file/d/1hzq6k99F0rN-hfgxuMYpYzIV39s1W5D8/view?usp=sharing",
+},
 ];
 
 export default function Certificates() {
@@ -64,13 +74,47 @@ export default function Certificates() {
               className="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-blue-500 transition duration-300 hover:-translate-y-2"
             >
 
-              {/* Certificate Image */}
-              <img
-                src={certificate.image}
-                alt={certificate.title}
-                className="w-full h-60 object-cover"
-              />
+               <div className="bg-slate-950 rounded-t-3xl overflow-hidden">
 
+                <div className="relative h-80 overflow-hidden rounded-t-3xl">
+                  {/* Blurred Background */}
+                  <img
+                    src={certificate.image}
+                    alt=""
+                    className="
+      absolute
+      
+      w-full
+      h-full
+      object-cover
+      blur-xs
+      scale-110
+      opacity-50
+    "
+                  />
+
+                  {/* Dark Overlay */}
+                  <div className="absolute inset-0  bg-slate-950/40"></div>
+
+                  {/* Main Image */}
+                  <div className="relative h-full flex items-center justify-center p-4">
+                    <img
+                      src={certificate.image}
+                      alt={certificate.title}
+                      className="
+        max-h-full
+        max-w-full
+        object-contain
+        rounded-lg
+        shadow-2xl
+        transition-transform
+        duration-500
+        hover:scale-105
+      "
+                    />
+                  </div>
+                </div>
+              </div>
               <div className="p-8">
 
                 <div className="flex items-center gap-3 mb-4">

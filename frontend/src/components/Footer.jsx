@@ -70,7 +70,7 @@ export default function Footer() {
             <div className="flex gap-4">
 
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Udbhav1105"
                 target="_blank"
                 rel="noreferrer"
                 className="bg-slate-800 p-4 rounded-full hover:bg-blue-600 transition"
@@ -79,7 +79,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/udbhav-mishra-7a567a286/"
                 target="_blank"
                 rel="noreferrer"
                 className="bg-slate-800 p-4 rounded-full hover:bg-blue-600 transition"
@@ -88,7 +88,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:your@email.com"
+                href="mailto:udbhavmsr@gmail.com"
                 className="bg-slate-800 p-4 rounded-full hover:bg-blue-600 transition"
               >
                 <FaEnvelope size={20} />
@@ -97,7 +97,7 @@ export default function Footer() {
             </div>
 
             <p className="text-gray-400 mt-6">
-              your@email.com
+             udbhavmsr@gmail.com
             </p>
 
           </div>
