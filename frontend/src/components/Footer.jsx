@@ -22,8 +22,9 @@ export default function Footer() {
             </h2>
 
             <p className="text-gray-400 mt-5 leading-7">
-              MERN Stack Developer passionate about building
-              scalable, responsive, and modern web applications.
+              Full Stack Developer passionate about building
+              scalable, responsive, and modern web applications from frontend
+              to backend.
             </p>
           </div>
 

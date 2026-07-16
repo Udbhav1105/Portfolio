@@ -51,7 +51,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <h3 className="text-3xl font-bold mb-6">
-              MERN Stack Developer
+              Full Stack Developer
             </h3>
 
             <p className="text-gray-400 leading-8 text-lg">
@@ -60,19 +60,20 @@ export default function About() {
               <span className="text-blue-400">
                 {" "}ABES Engineering College
               </span>.
+              I build full-stack web applications that span frontend design,
+              backend APIs, databases, authentication, and deployment.
             </p>
 
             <p className="text-gray-400 leading-8 text-lg mt-6">
-              I enjoy building scalable web applications using React,
-              Node.js, Express, MongoDB and Java. I also love solving
-              Data Structures & Algorithms problems and continuously
-              improving my problem-solving skills.
+              My toolkit includes React, Next.js, TypeScript, Node.js,
+              Express, MongoDB/MySQL, and secure payment integrations such as
+              Razorpay. I also enjoy solving Data Structures & Algorithms
+              problems and turning ideas into practical digital products.
             </p>
 
             <p className="text-gray-400 leading-8 text-lg mt-6">
-              My goal is to become a Software Engineer capable of
-              building high-performance applications that solve
-              real-world problems.
+              My goal is to become a Software Engineer who can design and ship
+              scalable full-stack solutions that create real-world impact.
             </p>
 
           </motion.div>
@@ -105,15 +106,15 @@ export default function About() {
               <div className="bg-slate-800 rounded-2xl p-6">
                 <FaLaptopCode className="text-4xl text-cyan-400 mb-4" />
                 <h4 className="font-bold text-xl">
-                  Frontend
+                  Frontend Stack
                 </h4>
 
                 <p className="text-gray-400 mt-3">
                   React
                   <br />
-                  Tailwind CSS
+                  Next.js
                   <br />
-                  JavaScript
+                  TypeScript
                 </p>
               </div>
 
@@ -135,15 +136,15 @@ export default function About() {
               <div className="bg-slate-800 rounded-2xl p-6">
                 <FaJava className="text-4xl text-orange-400 mb-4" />
                 <h4 className="font-bold text-xl">
-                  Currently Learning
+                  Full Stack Focus
                 </h4>
 
                 <p className="text-gray-400 mt-3">
-                  Spring Boot
+                  Razorpay
                   <br />
-                  AWS
+                  REST APIs
                   <br />
-                  System Design
+                  Deployment
                 </p>
               </div>
 

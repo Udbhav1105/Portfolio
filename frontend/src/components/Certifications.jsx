@@ -3,8 +3,17 @@ import { FaAward, FaExternalLinkAlt } from "react-icons/fa";
 import data from "../assets/certificates/deloitte-data-analytics.png"
 import amazon from "../assets/certificates/amazon.png"
 import cyber from '../assets/certificates/delloite.png'
+import amazon1 from '../assets/certificates/amazon1.png'
 
 const certificates = [
+  {
+  title: "Fundamentals of Machine Learning and Artificial Intelligence",
+  issuer: "Amazon Web Services",
+  image: amazon1,
+  description:
+    "Learned the fundamentals of Machine Learning and Artificial Intelligence, including core ML concepts, AI applications, and AWS-powered AI/ML services.",
+  link: "https://drive.google.com/file/d/1PtkncGqHJ0bGazBSeKl1SuZUqER3PME5/view?usp=sharing",
+},
   {
     title: "AWS Academy Cloud Foundations",
     issuer: "Amazon Web Services",

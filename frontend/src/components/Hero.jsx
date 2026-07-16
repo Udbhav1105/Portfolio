@@ -167,7 +167,7 @@ export default function Hero() {
             }}
             className="mt-8 text-lg sm:text-xl lg:text-2xl text-gray-300 font-medium"
           >
-            MERN Stack Developer • Java Developer • Problem Solver
+            Full Stack Developer • Java • Next.js 
           </motion.p>
 
           {/* Description */}
@@ -184,9 +184,10 @@ export default function Hero() {
             }}
             className="mt-6 text-gray-400 text-base sm:text-lg leading-8 max-w-xl mx-auto lg:mx-0"
           >
-            I build scalable, responsive and modern web applications using
-            React, Node.js, Express, MongoDB and Java. Passionate about solving
-            real-world problems through clean and efficient code.
+            I design and build full-stack web applications with React, Next.js,
+            TypeScript, Node.js, Express, and databases like MongoDB/MySQL.
+            I also implement secure payment solutions such as Razorpay for
+            modern digital products.
           </motion.p>
 
           {/* Buttons */}

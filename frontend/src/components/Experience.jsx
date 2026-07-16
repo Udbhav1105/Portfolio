@@ -7,17 +7,25 @@ import {
 
 const timeline = [
   {
+  icon: <FaBriefcase />,
+  title: "Full Stack Developer Intern",
+  subtitle: "Rezillion Tech Pvt. Ltd.",
+  duration: "July 2026 - Present",
+  description:
+    "Contributing to the development of full-stack web applications, collaborating with cross-functional teams, and gaining practical experience in building scalable, production-ready software while following industry best practices.",
+},
+  {
     icon: <FaGraduationCap />,
     title: "B.Tech in Computer Science (Data Science)",
     subtitle: "ABES Engineering College",
     duration: "2023 - 2027",
     description:
-      "Currently pursuing B.Tech with a focus on Data Science. Building scalable MERN applications while strengthening DSA and problem-solving skills.",
+      "Currently pursuing B.Tech with a focus on Data Science. Building scalable full-stack applications with Next.js, TypeScript, Node.js, and cloud deployment while strengthening DSA and problem-solving skills.",
   },
   {
     icon: <FaBriefcase />,
     title: "Open to Full Stack Internship",
-    subtitle: "MERN Stack Developer",
+    subtitle: "Full Stack Developer",
     duration: "Present",
     description:
       "Actively looking for Full Stack Developer internship opportunities where I can contribute, learn, and build impactful software.",
